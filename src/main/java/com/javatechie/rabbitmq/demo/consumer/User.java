@@ -10,6 +10,6 @@ public class User {
 
     @RabbitListener(queues = MessagingConfig.QUEUE)
     public void consumeMessageFromQueue(OrderStatus orderStatus) {
-        System.out.println("Message recieved from queue : " + orderStatus);
+        System.out.println("Message received from queue : " + orderStatus);
     }
 }

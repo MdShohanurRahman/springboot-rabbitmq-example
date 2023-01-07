@@ -12,3 +12,12 @@ Install RabbitMQ in windows :
 7. Login page default username and password is guest 
 8. After successfully login you should see RabbitMQ Home page
 
+## Install RabbitMQ using docker:
+
+```
+docker pull rabbitmq:3-management
+```
+
+```
+docker run -d --name my-rabbit -p 5672:5672 -p 15672:15672 rabbitmq:3-management
+```
